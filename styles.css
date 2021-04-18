@@ -11,6 +11,10 @@
   grid-template-rows: repeat(3, 1fr) auto;
 }
 
+.containerSedans, .containerSubs, .containerLuxury {
+  height: 400px;
+}
+
 .containerSedans__sub, .containerSubs__sub, .containerLuxury__sub {
   width: 80%;
   height: 100%;
