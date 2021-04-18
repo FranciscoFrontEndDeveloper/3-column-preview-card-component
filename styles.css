@@ -13,7 +13,7 @@
 }
 
 .containerSedans, .containerSubs, .containerLuxury {
-  height: 300px;
+  height: 450px;
   padding: 30px 0;
 }
 
@@ -45,6 +45,9 @@
   font-size: 15px;
   font-weight: 400;
   font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.6;
+  text-align: left;
+  letter-spacing: 1px;
 }
 
 .containerSedans__sub div input, .containerSubs__sub div input, .containerLuxury__sub div input {
@@ -55,22 +58,48 @@
   cursor: pointer;
   width: 50%;
   text-transform: capitalize;
+  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .containerSedans {
   background: #e38826;
 }
 
+.containerSedans .containerSedans__sub div:nth-child(4) input {
+  color: #e38826;
+}
+
 .containerSubs {
   background: #006970;
+}
+
+.containerSubs .containerSubs__sub div:nth-child(4) input {
+  color: #006970;
 }
 
 .containerLuxury {
   background: #004241;
 }
 
+.containerLuxury .containerLuxury__sub div:nth-child(4) input {
+  color: #004241;
+}
+
 .containerFooter {
   background: #2F243A;
   padding: 10px 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+}
+
+.attribution a {
+  color: #4BB3FD;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=styles.css.map */

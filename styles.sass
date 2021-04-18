@@ -9,7 +9,7 @@
  display: grid
  grid-template-rows: repeat(3,1fr ) auto
 .containerSedans, .containerSubs,.containerLuxury
- height: 300px
+ height: 450px
  padding: 30px 0
 .containerSedans__sub,.containerSubs__sub,.containerLuxury__sub
  width: 80%
@@ -31,6 +31,9 @@
      font-size: 15px
      font-weight: 400
      font-family: 'Lexend Deca', sans-serif
+     line-height: 1.6
+     text-align: left
+     letter-spacing: 1px
   input
      background: #fff
      padding: 10px 0
@@ -39,22 +42,44 @@
      cursor: pointer
      width: 50%
      text-transform: capitalize
-     
+     font-weight: 400
+     font-family: 'Lexend Deca', sans-serif
 
 .containerSedans
  background: hsl(31, 77%, 52%)
+ .containerSedans__sub
+    div:nth-child(4)
+       input
+          color: hsl(31, 77%, 52%)
 
 .containerSubs
  background: hsl(184, 100%, 22%)
+ .containerSubs__sub
+    div:nth-child(4)
+       input
+          color: hsl(184, 100%, 22%)
+
 
 .containerLuxury
  background: hsl(179, 100%, 13%)
+ .containerLuxury__sub
+    div:nth-child(4)
+       input
+          color: hsl(179, 100%, 13%)
+
 
 .containerFooter
  background: #2F243A
  padding: 10px 0
 
-
+.attribution
+   font-size: 11px
+   text-align: center
+   color: #fff
+   a
+      color: #4BB3FD
+      text-decoration: none
+      text-transform: capitalize
 
 
 
