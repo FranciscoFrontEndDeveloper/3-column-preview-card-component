@@ -4,9 +4,32 @@
 }
 
 .containerMain {
-  width: 100%;
+  width: 96%;
   height: 100vh;
+  margin: 0 auto;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr) auto;
+}
+
+.containerSedans, .containerSubs, .containerLuxury {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+}
+
+.containerSedans {
+  background: #e38826;
+}
+
+.containerSubs {
+  background: #006970;
+}
+
+.containerLuxury {
+  background: #004241;
+}
+
+.containerFooter {
+  background: #2F243A;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=styles.css.map */
