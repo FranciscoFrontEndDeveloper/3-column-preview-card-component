@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
-*
+body
  margin: 0
  padding: 0
 .containerMain
@@ -22,6 +22,7 @@
   align-items: center
   h1,p
    color: white
+   margin: 0
   h1
    text-transform: uppercase
    font-weight: 700
@@ -44,6 +45,9 @@
      text-transform: capitalize
      font-weight: 400
      font-family: 'Lexend Deca', sans-serif
+ div:nth-child(3)
+    display: grid
+    align-items: start 
 .containerSedans
  background: hsl(31, 77%, 52%)
  .containerSedans__sub
@@ -76,15 +80,24 @@
  background: #2F243A
  padding: 10px 0
 .attribution
-   font-size: 11px
+   font-size: 15px
    text-align: center
    color: #fff
    a
       color: #4BB3FD
       text-decoration: none
       text-transform: capitalize
+@media screen and ( min-width: 769px ) and (max-width: 1920px)
+   .containerMain
+      width: 60%
+      grid-template-columns: repeat(3,1fr )
+      grid-template-rows: 1fr auto
+      margin: 0px auto
+      row-gap: 10px
+      align-items: center
+   .containerFooter
+      grid-column: 1/span 4
 
-
-
+   
 
 

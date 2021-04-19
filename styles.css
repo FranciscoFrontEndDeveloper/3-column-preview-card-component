@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
-* {
+body {
   margin: 0;
   padding: 0;
 }
@@ -32,6 +32,7 @@
 
 .containerSedans__sub div h1, .containerSedans__sub div p, .containerSubs__sub div h1, .containerSubs__sub div p, .containerLuxury__sub div h1, .containerLuxury__sub div p {
   color: white;
+  margin: 0;
 }
 
 .containerSedans__sub div h1, .containerSubs__sub div h1, .containerLuxury__sub div h1 {
@@ -60,6 +61,11 @@
   text-transform: capitalize;
   font-weight: 400;
   font-family: 'Lexend Deca', sans-serif;
+}
+
+.containerSedans__sub div:nth-child(3), .containerSubs__sub div:nth-child(3), .containerLuxury__sub div:nth-child(3) {
+  display: grid;
+  align-items: start;
 }
 
 .containerSedans {
@@ -107,7 +113,7 @@
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
   color: #fff;
 }
@@ -116,5 +122,19 @@
   color: #4BB3FD;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+  .containerMain {
+    width: 60%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    margin: 0px auto;
+    row-gap: 10px;
+    align-items: center;
+  }
+  .containerFooter {
+    grid-column: 1/span 4;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
