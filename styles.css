@@ -25,33 +25,29 @@ body {
   grid-template-rows: repeat(4, auto);
 }
 
-.containerSedans__sub div, .containerSubs__sub div, .containerLuxury__sub div {
+div {
   display: grid;
   align-items: center;
 }
-
-.containerSedans__sub div h1, .containerSedans__sub div p, .containerSubs__sub div h1, .containerSubs__sub div p, .containerLuxury__sub div h1, .containerLuxury__sub div p {
+div h1, div p {
   color: white;
   margin: 0;
 }
-
-.containerSedans__sub div h1, .containerSubs__sub div h1, .containerLuxury__sub div h1 {
+div h1 {
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: "Big Shoulders Display", cursive;
   font-size: 40px;
 }
-
-.containerSedans__sub div p, .containerSubs__sub div p, .containerLuxury__sub div p {
+div p {
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   line-height: 1.6;
   text-align: left;
   letter-spacing: 1px;
 }
-
-.containerSedans__sub div input, .containerSubs__sub div input, .containerLuxury__sub div input {
+div input {
   background: #fff;
   padding: 10px 0;
   border-radius: 40px;
@@ -60,10 +56,10 @@ body {
   width: 50%;
   text-transform: capitalize;
   font-weight: 400;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
 }
 
-.containerSedans__sub div:nth-child(3), .containerSubs__sub div:nth-child(3), .containerLuxury__sub div:nth-child(3) {
+div:nth-child(3) {
   display: grid;
   align-items: start;
 }
@@ -72,11 +68,10 @@ body {
   background: #e38826;
 }
 
-.containerSedans .containerSedans__sub div:nth-child(4) input {
+.containerSedans__sub div:nth-child(4) input {
   color: #e38826;
 }
-
-.containerSedans .containerSedans__sub div:nth-child(4) input:hover {
+.containerSedans__sub div:nth-child(4) input:hover {
   background: none;
   color: white;
 }
@@ -85,11 +80,10 @@ body {
   background: #006970;
 }
 
-.containerSubs .containerSubs__sub div:nth-child(4) input {
+.containerSubs__sub div:nth-child(4) input {
   color: #006970;
 }
-
-.containerSubs .containerSubs__sub div:nth-child(4) input:hover {
+.containerSubs__sub div:nth-child(4) input:hover {
   background: none;
   color: white;
 }
@@ -98,30 +92,31 @@ body {
   background: #004241;
 }
 
-.containerLuxury .containerLuxury__sub div:nth-child(4) input {
+.containerLuxury__sub div:nth-child(4) input {
   color: #004241;
 }
-
-.containerLuxury .containerLuxury__sub div:nth-child(4) input:hover {
+.containerLuxury__sub div:nth-child(4) input:hover {
   background: none;
   color: white;
 }
 
 .containerFooter {
-  background: #2F243A;
-  padding: 10px 0;
+  display: grid;
+  justify-items: center;
+  background: #000;
+  width: 100%;
 }
-
-.attribution {
-  font-size: 15px;
-  text-align: center;
+.containerFooter h3 {
   color: #fff;
+  text-align: center;
 }
-
-.attribution a {
-  color: #4BB3FD;
-  text-decoration: none;
+.containerFooter a {
+  color: #FF3F00;
   text-transform: capitalize;
+  text-decoration: none;
+}
+.containerFooter a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1920px) {
@@ -133,8 +128,8 @@ body {
     row-gap: 10px;
     align-items: center;
   }
+
   .containerFooter {
     grid-column: 1/span 4;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

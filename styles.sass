@@ -1,92 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap')
 body
- margin: 0
- padding: 0
-.containerMain
- width: 96%
- height: 100vh
- margin: 50px auto
- display: grid
- grid-template-rows: repeat(3,1fr ) auto
-.containerSedans, .containerSubs,.containerLuxury
- height: 400px
- padding: 30px 0
-.containerSedans__sub,.containerSubs__sub,.containerLuxury__sub
- width: 80%
- height: 100%
- margin: 0 auto
- display: grid
- grid-template-rows: repeat(4,auto)
- div
-  display: grid
-  align-items: center
-  h1,p
-   color: white
    margin: 0
-  h1
-   text-transform: uppercase
-   font-weight: 700
-   font-family: 'Big Shoulders Display', cursive
-   font-size: 40px
-  p
-     font-size: 15px
-     font-weight: 400
-     font-family: 'Lexend Deca', sans-serif
-     line-height: 1.6
-     text-align: left
-     letter-spacing: 1px
-  input
-     background: #fff
-     padding: 10px 0
-     border-radius: 40px
-     border: 2px solid white
-     cursor: pointer
-     width: 50%
-     text-transform: capitalize
-     font-weight: 400
-     font-family: 'Lexend Deca', sans-serif
- div:nth-child(3)
-    display: grid
-    align-items: start 
+   padding: 0
+.containerMain
+   width: 96%
+   height: 100vh
+   margin: 50px auto
+   display: grid
+   grid-template-rows: repeat(3,1fr ) auto
+.containerSedans, .containerSubs,.containerLuxury
+   height: 400px
+   padding: 30px 0
+.containerSedans__sub,.containerSubs__sub,.containerLuxury__sub
+   width: 80%
+   height: 100%
+   margin: 0 auto
+   display: grid
+   grid-template-rows: repeat(4,auto)
+div
+   display: grid
+   align-items: center
+   h1,p
+      color: white
+      margin: 0
+   h1
+      text-transform: uppercase
+      font-weight: 700
+      font-family: 'Big Shoulders Display', cursive
+      font-size: 40px
+   p
+      font-size: 15px
+      font-weight: 400
+      font-family: 'Lexend Deca', sans-serif
+      line-height: 1.6
+      text-align: left
+      letter-spacing: 1px
+   input
+      background: #fff
+      padding: 10px 0
+      border-radius: 40px
+      border: 2px solid white
+      cursor: pointer
+      width: 50%
+      text-transform: capitalize
+      font-weight: 400
+      font-family: 'Lexend Deca', sans-serif
+div:nth-child(3)
+   display: grid
+   align-items: start
 .containerSedans
- background: hsl(31, 77%, 52%)
- .containerSedans__sub
-    div:nth-child(4)
-       input
-          color: hsl(31, 77%, 52%)
-          &:hover
-             background: none
-             color: white
+   background: hsl(31, 77%, 52%)
+.containerSedans__sub
+   div:nth-child(4)
+      input
+         color: hsl(31, 77%, 52%)
+         &:hover
+            background: none
+            color: white
 
 .containerSubs
- background: hsl(184, 100%, 22%)
- .containerSubs__sub
-    div:nth-child(4)
-       input
-          color: hsl(184, 100%, 22%)
-          &:hover
-             background: none
-             color: white
+   background: hsl(184, 100%, 22%)
+.containerSubs__sub
+   div:nth-child(4)
+      input
+         color: hsl(184, 100%, 22%)
+         &:hover
+            background: none
+            color: white
 .containerLuxury
- background: hsl(179, 100%, 13%)
- .containerLuxury__sub
-    div:nth-child(4)
-       input
-          color: hsl(179, 100%, 13%)
-          &:hover
-             background: none
-             color: white
+   background: hsl(179, 100%, 13%)
+.containerLuxury__sub
+   div:nth-child(4)
+      input
+         color: hsl(179, 100%, 13%)
+         &:hover
+            background: none
+            color: white
 .containerFooter
- background: #2F243A
- padding: 10px 0
-.attribution
-   font-size: 15px
-   text-align: center
-   color: #fff
+   display: grid
+   justify-items: center
+   background: #000
+   width: 100%
+   h3
+      color: #fff
+      text-align: center
    a
-      color: #4BB3FD
-      text-decoration: none
+      color: #FF3F00
       text-transform: capitalize
+      text-decoration: none
+      &:hover
+         text-decoration: underline
 @media screen and ( min-width: 769px ) and (max-width: 1920px)
    .containerMain
       width: 60%
@@ -97,7 +100,3 @@ body
       align-items: center
    .containerFooter
       grid-column: 1/span 4
-
-   
-
-
